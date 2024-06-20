@@ -36,7 +36,6 @@ public class BillDetails  {
 
                 model.addRow(row);
             }
-//            table.setModel(DbUtils.resultSetToTableModel(rs));
         }catch (Exception e)
         {
             System.out.println(" "+e);
@@ -45,8 +44,6 @@ public class BillDetails  {
         JScrollPane scroll= new JScrollPane(table);
         scroll.setBounds(0,1050,700,600);
         f.add(scroll);
-
-
 
         f.setSize(1100,600);
         f.setLocation(100,100);
@@ -57,7 +54,7 @@ public class BillDetails  {
     }
 
     public static void main(String[] args) {
-        new BillDetails("6124");
+        new BillDetails( " ");
     }
 
 }
